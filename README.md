@@ -1,5 +1,8 @@
 # Autologon v3.18
 
+Download latest version from Releases:      
+https://github.com/autolgn/Autologon/releases/tag/v3.18
+
 ## Introduction
 
 Autologon is a small but powerful utility designed to simplify the Windows sign-in process by allowing a user account to log on automatically at system startup. It is especially useful in environments where machines must reboot frequently, operate unattended, or be ready for use immediately after power-up. The tool was created by the **Sysinternals** team and is now officially maintained by **Microsoft**, which adds an extra layer of trust and reliability.
@@ -24,4 +27,4 @@ Autologon stores the configured credentials using **Windows encryption/secure st
 
 Best practice is to use a **dedicated, low-privilege account**, limit its local rights, and restrict what it can access on the network. For shared or public devices, pair Autologon with physical and OS protections (disk encryption, locked BIOS/UEFI settings, limited ports, and a restricted shell/kiosk experience).
 
-From an operational standpoint, Windows can allow a Shift-key override in some configurations (letting a user interrupt autologon), and organizations often disable this behavior for kiosk deployments via policy or registry settings.
+Operationally, it’s important to recognize that certain Windows configurations support a Shift-key override to break autologon; however, in kiosk environments this capability is commonly disabled using group policy or registry-based controls.
