@@ -24,4 +24,4 @@ Autologon stores the configured credentials using **Windows encryption/secure st
 
 Best practice is to use a **dedicated, low-privilege account**, limit its local rights, and restrict what it can access on the network. For shared or public devices, pair Autologon with physical and OS protections (disk encryption, locked BIOS/UEFI settings, limited ports, and a restricted shell/kiosk experience).
 
-Operationally, know that Windows can allow a **Shift-key override** in some setups (letting someone interrupt autologon), and organizations sometimes disable that behavior via policy/registry configuration for kiosks.
+From an operational standpoint, Windows can allow a Shift-key override in some configurations (letting a user interrupt autologon), and organizations often disable this behavior for kiosk deployments via policy or registry settings.
